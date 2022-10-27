@@ -1,0 +1,87 @@
+html,
+body {
+    height: 100%;
+    background-color:black!important;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#cvs {
+    width: 980px;
+    height: 400px;
+    background-color: black;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.text-gray {
+    color: var(--gray-300) !important;
+}
+
+.songlist-body {
+    height: 700px;
+    overflow-y: scroll;
+}
+
+.songListItem {
+    color: inherit;
+    padding: .5rem 1rem;
+    cursor: pointer;
+}
+
+.songListItem:hover {
+    color: var(--gray-100);
+    background-color: var(--gray-700);
+    border-radius: var(--border-radius);
+}
+
+.songListItem.selected {
+    border-radius: var(--border-radius);
+    background-color: var(--gray-900);
+    color: inherit;
+}
+
+.songListItem.selected:hover {
+    color: var(--gray-100);
+    background-color: var(--gray-700);
+    border-radius: var(--border-radius);
+}
+
+.close {
+    opacity: 1 !important;
+    text-shadow: none !important;
+}
+
+.modal-header .close {
+    color: inherit !important;
+}
+
+.bi-x:hover {
+    color: var(--gray-100);
+}
+
+.close:focus {
+    outline: 0;
+    border: 0;
+}
+
+.modal-content {
+    width: 110% !important;
+    background-color: var(--gray-800) !important;
+    border-radius: var(--border-radius) !important;
+}
+
+:root {
+    --gray-100: #F4F4F5;
+    --gray-300: #D4D4D8;
+    --gray-700: #3F3F46;
+    --gray-800: #27272A;
+    --gray-900: #18181B;
+    --border-radius: .375rem;
+    color-scheme: dark;
+}
